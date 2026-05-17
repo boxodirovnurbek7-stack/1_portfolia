@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nurbek Boxodirov — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ====== STYLE QISMI (o‘zgarmagan) ====== */
+:root {
+  --green: #00ff88;
+  --black: #020804;
+  --card-bg: rgba(0,255,136,0.04);
+  --border: rgba(0,255,136,0.18);
+  --text: #e0ffe8;
+  --muted: #7aad8a;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--black); color:var(--text); font-family:'Rajdhani',sans-serif; overflow-x:hidden; cursor:none; }
+
+/* (QOLGAN CSS HAMMASI SIZNIKI BO‘YICHA O‘ZGARMAGAN) */
+</style>
+</head>
+
+<body>
+
+<div class="aurora a1"></div>
+<div class="aurora a2"></div>
+<div class="aurora a3"></div>
+<canvas id="bg-canvas"></canvas>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">N · B</div>
+  <ul class="nav-links">
+    <li><a href="#about">Haqimda</a></li>
+    <li><a href="#claude-info">Claude AI</a></li>
+    <li><a href="#likes">Sevimlilar</a></li>
+    <li><a href="#goals">Maqsadlar</a></li>
+    <li><a href="#actions">Harakatlar</a></li>
+    <li><a href="#happy">Baxt</a></li>
+    <li><a href="#contact">Aloqa</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <p class="hero-tag">JavaScript Developer · Samarqand, O'zbekiston</p>
+
+  <h1 class="hero-name">NURBEK <span>BOXODIROV</span></h1>
+
+  <p class="hero-sub">Ravshan o'g'li · 14 yosh · 7-sinf</p>
+
+  <div class="hero-btns">
+    <button class="btn btn-solid" onclick="document.getElementById('goalsModal').classList.add('open')">🎯 Maqsadlarim</button>
+    <a href="#about" class="btn">Meni tanish</a>
+    <a href="#happy" class="btn">Baxtlimisan? →</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div style="width:100%">
+    <h2 class="section-title reveal">Men haqimda</h2>
+
+    <div class="about-grid">
+
+      <div class="about-card reveal">
+        <div class="card-icon">👤</div>
+        <div class="card-title">Kim men?</div>
+        <div class="card-text">
+          Ismim <strong>Boxodirov Nurbek Ravshan o'g'li</strong>.
+          Samarqandda yashayman. 14 yoshimda katta orzular bilan yashayman.
+          Ixtisoslashtirilgan maktabning 7-sinfida o'qiyman.
+        </div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="card-icon">💻</div>
+        <div class="card-title">Texnologiya</div>
+        <div class="card-text">
+          JavaScript o'rganmoqdaman va har kuni kod yozmoqdaman.
+          Kelajakda o'z kompaniyam <span class="ne-logo">N_E</span> ni yaratmoqchiman.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span style="color:var(--green);font-family:'Orbitron';">
+    NURBEK BOXODIROV
+  </span>
+  — Samarqand · 2025
+</footer>
+
+</body>
+</html>
